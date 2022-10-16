@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polar Bear's Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/polarbear_icon.ico" type="image/x-icon">
+</head>
+<body background="images/background.jpg">
+    <div class="controlBox" id="addBox">
+        <div class="controlCell add" id="addUsers">
+            <h2>Add User</h2>
+            <label>Name: </label><br/><input type="text" id="userName" placeholder="Enter user name"/><br/>
+            <label>Email: </label><br/><input type="text" id="userEmail" placeholder="Enter user email"/><br/>
+            <button id="createUserBtn">Add User</button>
+        </div>
+        <div class="controlCell add" id="addProducts">
+            <h2>Add Product</h2>
+            <label>Product Code: </label><input type="text" id="productCode" placeholder="Enter product code"/><br/>
+            <label>Name: </label><input type="text" id="productName" placeholder="Enter product name"/><br/>
+            <label>Price: </label><input type="text" id="productPrice" placeholder="Enter product price"/><br/>
+            <button id="createProductBtn">Add Product</button>
+        </div>
+    </div>
+    <div class="controlBox" id="makeOrderBox">
+        <div class="controlCell makeOrder" id="chooseUser">
+            <h2>Select User</h2>
+            <label for="userDropBox">User:</label>
+            <select name="users" id="userDropBox">
+                <option value="defaultValue">--- Please select user ---</option>
+            </select><br>
+            <button id="deleteUserBtn">Delete User</button>
+        </div>
+        <div class="controlCell makeOrder" id="chooseProduct">
+            <h2>Select Product</h2>
+            <label for="productDropBox">Product:</label>
+            <select name="products" id="productDropBox">
+                <option value="defaultValue">--- Please select product ---</option>
+            </select><br>
+            <p id="productPrice">Product price: <b>0.00$</b></p>
+            <button id="deleteProductBtn">Delete Product</button> 
+        </div>
+        <div class="controlCell makeOrder" id="chooseQuantity">
+            <h2>Enter Quantity</h2>
+            <label>Quantity: </label><input type="text" id="quantityInput" placeholder="Enter number of items"/><br>
+        </div>
+        <div class="controlCell makeOrder" id="makeOrder">
+            <h2>Make Order</h2>
+            <p id="totalPrice">Total price: <b>0.00$</b></p>
+            <button id="makeOrderBtn">Make Order</button>
+        </div>
+    </div>
+    <div id="shoppingCart">
+        <h2><span>User's shopping cart</span></h2>
+        <table id="shoppingCartTable">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>User Email</th>
+                    <th>Product Code</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th>Delete Order</th>
+                </tr>
+        </thead>
+        <tbody></tbody>
+        </table>
+    </div>
+    <img src="images/polar_bear_on_page.png" id="polarBear"/>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>

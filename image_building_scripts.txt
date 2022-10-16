@@ -1,0 +1,15 @@
+# Build database image 
+docker build -t database:1.0 database/
+
+# Build backend image 
+docker build -t spring-boot-backend:1.0 backend/
+
+# Build frontend image 
+
+
+# Launch docker compose
+docker-compose -f polar_bears_shop.yml up
+
+# Go into postgresql container to check for what is inside
+docker exec -it polar_bears_shop_database_1 psql -U user webapp
+select * from user_table;

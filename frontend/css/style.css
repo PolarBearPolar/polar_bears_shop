@@ -1,0 +1,150 @@
+/* Setting font style for all elements */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Setting horizontal alignment in parent div elements */
+div.controlBox#addBox{
+    display: flex;
+}
+div.controlBox#makeOrderBox {
+    display: flex;
+}
+
+/* Setting header style */
+h2 {
+    text-align: center;
+    color: white;
+}
+
+/* Setting button style */
+button {
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+    background: #08C;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+button:hover {
+    background: #0AF
+}
+
+/* Setting child element styles for #addBox and #makeOrderBox */
+.controlCell{
+    background: #69D2E7;
+    padding: 0px 0px 0px 10px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+    margin: 10px;
+    position: relative;
+    height: 350px;
+    border-radius: 25px;
+}
+.controlCell.add {
+    width: 48%;
+}
+.controlCell.makeOrder {
+    width: 23%;
+}
+.controlCell input,.controlCell select {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: #333;
+    box-shadow: 
+        inset 0 2px 0 rgba(0,0,0,.2), 
+        0 0 4px rgba(0,0,0,0.1);
+}
+.controlCell input:focus, .controlCell select:focus {
+    outline: none;
+    box-shadow: 
+        inset 0 2px 0 rgba(0,0,0,.2), 
+        0 0 4px rgba(0,0,0,0.1), 
+        0 0 5px 1px #51CBEE;
+}
+.controlCell label {
+    text-shadow: 0 1px 1px rgba(255,255,255,0.9);
+    font-size: 18px;
+}
+.controlCell p {
+    text-shadow: 0 1px 1px rgba(255,255,255,0.9);
+    font-size: 18px;
+}
+.controlCell p b {
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0px 0px;
+}
+
+/* Styling shopping cart parent element */
+div#shoppingCart {
+    width: 100%;
+}
+#shoppingCart h2 span{
+    padding: 3px 15px 3px 15px;
+    background-color: #69D2E7;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+}
+
+/* Styling shopping cart table*/
+table#shoppingCartTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+/* Rounding table courners */
+table#shoppingCartTable tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+}
+table#shoppingCartTable tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+}
+table#shoppingCartTable tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+table#shoppingCartTable tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+/* Table border */
+table#shoppingCartTable td, table#shoppingCartTable th {
+    border: 2px #51CBEE solid;
+    padding: 5px;
+}
+table#shoppingCartTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #08C;
+    color: white;
+}
+/* Setting table row colors */
+table#shoppingCartTable tr:nth-child(even){
+    background-color: white;
+}
+table#shoppingCartTable tr:nth-child(odd){
+    background-color: #69D2E7;
+}
+/* Setting table row hover */
+table#shoppingCartTable tr:hover {
+    background-color: #08C;
+    color: white;
+}
+table#shoppingCartTable tr .deleteBtn {
+    width: 100%;
+}
+
+/* Setting image style */
+img#polarBear {
+    position:fixed;
+    width: 150px;
+    height: auto;
+    top: 0px;
+    right: 0%;
+}
