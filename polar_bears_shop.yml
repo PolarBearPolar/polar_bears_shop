@@ -1,5 +1,11 @@
 version: "3.1"
 services:
+ nginx-container:
+  image: nginx-js-frontend:1.0
+  ports:
+   - 80:80
+  depends_on:
+   - spring-boot-container
  spring-boot-container:
   image: spring-boot-backend:1.0
   ports:

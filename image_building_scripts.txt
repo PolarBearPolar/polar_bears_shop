@@ -5,7 +5,7 @@ docker build -t database:1.0 database/
 docker build -t spring-boot-backend:1.0 backend/
 
 # Build frontend image 
-
+docker build -t nginx-js-frontend:1.0 frontend/
 
 # Launch docker compose
 docker-compose -f polar_bears_shop.yml up
