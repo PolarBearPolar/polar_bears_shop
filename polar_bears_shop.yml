@@ -2,17 +2,31 @@ version: "3.1"
 services:
  nginx-container:
   image: nginx-js-frontend:1.0
+  build: ./frontend
+  container_name: nginx-container
   ports:
-   - 80:80
+   - 5001:80
+# restart: unless-stopped
   depends_on:
    - spring-boot-container
  spring-boot-container:
   image: spring-boot-backend:1.0
+  build: ./backend
+  container_name: spring-boot-container
   ports:
    - 8080:8080
+# restart: unless-stopped
   depends_on:
    - database
  database:
-  image: database:1.0
+  image: postgres:10-alpine
+  container_name: database
+  environment:
+   - POSTGRES_USER=user
+   - POSTGRES_PASSWORD=password
+   - POSTGRES_DB=webapp
+  volumes:
+   - c:/Users/User/Desktop/Git/polar_bears_shop/database:/var/lib/postgresql/data
   ports:
    - 5433:5432
+#  restart: unless-stopped

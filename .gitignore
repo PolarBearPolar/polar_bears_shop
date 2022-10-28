@@ -1,0 +1,3 @@
+# Ignore database files
+/database
+/image_building_scripts.txt
