@@ -1,0 +1,16 @@
+com\web\app\shopping_cart\ShoppingCartController.class
+com\web\app\product\ProductRepository.class
+com\web\app\product\ProductController.class
+com\web\app\user\User.class
+com\web\app\AppApplication.class
+com\web\app\product\Product.class
+com\web\app\user\UserService.class
+com\web\app\shopping_cart\ShoppingCart.class
+com\web\app\user\UserDTO.class
+com\web\app\shopping_cart\ShoppingCartUserDTO.class
+com\web\app\shopping_cart\ShoppingCartDTO.class
+com\web\app\user\UserController.class
+com\web\app\shopping_cart\ShoppingCartService.class
+com\web\app\shopping_cart\ShoppingCartRepository.class
+com\web\app\product\ProductService.class
+com\web\app\user\UserRepository.class
