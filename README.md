@@ -15,6 +15,8 @@ This is my first full-stack web application.
   - **line 21:** change this external port (8080) to any port if it is already occupied on your local machine
   - **line 35:** choose any **empty** directory on your machine and place the path to this directory here. It will be used as a place for storing database data
   - **line 37:** change this external port (5433) to any port if it is already occupied on your local machine
+- cd to the directory that contains the cloned repo and run ````docker-compose -f polar_bears_shop.yml up````
+- open a browser and go to ** http://localhost:${external port number that you used on line 10}/** (e.g. **http://localhost:5001/**)
 ![image](https://user-images.githubusercontent.com/88388315/198826899-fcec1960-2478-47e1-9b60-95810e141915.png)
 
 I hope you will like it 🙂
