@@ -18,6 +18,6 @@ This is my first full-stack web application.
 ![image](https://user-images.githubusercontent.com/88388315/198826899-fcec1960-2478-47e1-9b60-95810e141915.png)
 - cd to the directory that contains the cloned repo and run ````docker-compose -f polar_bears_shop.yml up````
 - wait until all containers are up and running (it usually takes less than 1 minute)
-- open a browser and go to **localhost:${external port number that you used on line 10}/** (e.g. **localhost:5001**)
+- open a browser and go to **localhost:${external port number that you used on line 10}** (e.g. **localhost:5001**)
 
 I hope you will like it 🙂
